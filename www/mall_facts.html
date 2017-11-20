@@ -1,0 +1,41 @@
+<div class="pages">
+	<div data-page="mall_facts" class="page">
+        <div class="page-content pad0">
+            <div class="container bg1">
+
+            	<img onclick="goto_page('tabs.html')" src="images/burger_icon.png" class="burger_icon">
+                
+				<div class="menu_box">
+					<div id="mall_logog_images" class="mall_logo_box"><img src="images/mall_logo.jpg" class="wdh" alt="" /></div>
+					<div class="menu">
+						<div class="menu_sub click_menu_sub" data-iddisp="mall_facts_page_dynamic"><div class="m_sub1" ><i class="fa fa-bullhorn menu_i menu_active" aria-hidden="true"></i></div><div class="m_sub2"  ><p class="menu_p menu_active">Mall Facts</p></div></div>
+						<div class="menu_sub click_menu_sub" data-iddisp="floor_plan_page_dynamic"><div class="m_sub1"><i class="fa fa-map menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Floor Plans</p></div></div>
+						<!-- <div class="menu_sub click_menu_sub" data-iddisp="walkthrough_page_dynamic"><div class="m_sub1"><i class="fa fa-video-camera menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Walk Through</p></div></div> -->
+						<div class="menu_sub click_menu_sub" data-iddisp="anchors_page_dynamic"><div class="m_sub1"><i class="fa fa-anchor menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Anchors</p></div></div>
+						<div class="menu_sub click_menu_sub" data-iddisp="stores_page_dynamic"><div class="m_sub1"><i class="fa fa-shopping-bag menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Stores</p></div></div>
+						<div class="menu_sub click_menu_sub" data-iddisp="location_page_dynamic"><div class="m_sub1"><i class="fa fa-map-marker menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Location Map</p></div></div>
+						<div class="menu_sub click_menu_sub" data-iddisp="pictures_page_dynamic"><div class="m_sub1"><i class="fa fa-picture-o menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Pictures</p></div></div>
+						<div class="menu_sub click_menu_sub event_page_dynamic" data-iddisp="event_page_dynamic"><div class="m_sub1"><i class="fa fa-calendar menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Events</p></div></div>
+						<!-- <div class="menu_sub click_menu_sub" data-iddisp="transformation_page_dynamic"><div class="m_sub1"><i class="fa fa-cogs menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Transformation</p></div></div> -->
+						<!-- <div class="menu_sub click_menu_sub" data-iddisp="form_page_dynamic"><div class="m_sub1"><i class="fa fa-file-text menu_i" aria-hidden="true"></i></div><div class="m_sub2"><p class="menu_p">Form</p></div></div> -->
+					</div>
+				</div>
+				<div class="right_box" id="mall_data">
+				</div>
+				<div class="footer">
+					<div class="footer_sub">
+						<a class="footer_a" onclick="goto_page('sync.html')">SYNC</a>
+						<a class="footer_a" onclick="goto_page('tabs.html')">SELECT MALL</a>
+						<!-- <a class="footer_a" onclick="logout()">LOGOUT</a> -->
+					</div>
+					<div class="footer_sub"><p class="footer_p">Copyright @ 2017</p></div>
+				</div>
+            </div>
+			<div id="myFloorPlanModal" class="modal">
+				<span class="close" onclick="document.getElementById('myFloorPlanModal').style.display='none'">&times;</span>
+				<img class="modal-content" id="imgFloorPlan">
+				<div id="captionFloorPlan"></div>
+			</div>
+        </div>
+    </div>
+</div>
