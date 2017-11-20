@@ -79,8 +79,14 @@ function zip_unzip_code() {
         uri,
         file_download,
         function(entry) {
-           zip.unzip(file_download, directory,function (){console.log('file unzip Success')});
-           console.log("download complete: " + entry.toURL());
+            zip.unzip(file_download, directory,function (){
+                console.log('file unzip Success');
+                $('.bar_fill').animate({"width":"100%"});
+                $('.heart').animate({"margin-left":"98%"});
+                $('.progress_text').text('THANK YOU FOR DOWNLOADING ');
+                $('.p_t1').fadeIn();
+            });
+            console.log("download complete: " + entry.toURL());
         },
         function(error) {
            console.log("download error source " + error.source);
@@ -117,10 +123,6 @@ function download_image(){
         load_ui = res;
         Lockr.set('load_ui', load_ui);
         // load_location_ui();
-        $('.bar_fill').animate({"width":"100%"});
-        $('.heart').animate({"margin-left":"98%"});
-        $('.progress_text').text('THANK YOU FOR DOWNLOADING ');
-        $('.p_t1').fadeIn();
         zip_unzip_code();
 
     })
