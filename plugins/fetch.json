@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-zip": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-zip"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
