@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.zipunzipdemo.kreaserv" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Nexus Development App</name>
+<widget id="com.kreaserv.nexus" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>NEXUS LEASING APP</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Nexus Malls is the Indian Retail Portfolio arm of world’s leading investment firm, The Blackstone Group. Nexus Malls marked its foray into Indian Retailing in 2016 with an aim to transform the shopping experience of the Indian consumers. Growing at a great pace since inception, Nexus Malls now boasts of a portfolio of 4.5 million square feet of Grade A retail space in the country. Nexus Malls have thereby established themselves as one of the leaders in the retail real estate industry in India.
     </description>
-    <author email="info@kreaserv.com" href="http://kreaserv.com">
+    <author email="vishal@kreaserv.com" href="http://www.nexusmalls.com/">
         PhoneGap Team
     </author>
     <content src="index.html" />
@@ -42,7 +42,6 @@
         <string>Photo Library Access Warning</string>
     </plugin> -->
     <!-- <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.5" /> -->
-    <plugin name="cordova-plugin-zip" source="npm" spec="~3.1.0" />
 
     <icon src="app_icon.png" />
     <icon src="app_icon.png" platform="android" width="57" height="57" density="mdpi" />
