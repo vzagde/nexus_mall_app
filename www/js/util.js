@@ -64,6 +64,10 @@ function login(){
 }
 
 function zip_unzip_code() {
+    $('.progress_text').text('PAGES DOWNLOAD COMPLETE. ASSETS DOWNLOAD WILL START IN SOMETIME...');
+    $('.bar_fill').animate({"width":"10%"});
+    $('.heart').animate({"margin-left":"8%"});
+
     var directory;
     if (cordova.file.documentsDirectory) {
         directory = cordova.file.documentsDirectory; // for iOS
@@ -82,13 +86,13 @@ function zip_unzip_code() {
         uri,
         file_download,
         function(entry) {
-            $('.progress_text').html('DOWNLOADING FOR ASSET FILES. <br>PLEASE WAIT...');
+            $('.progress_text').html('DOWNLOADING ASSET FILES. <br> THIS PROCESS WILL TAKE TIME, PLEASE WAIT...');
             $('.bar_fill').animate({"width":"50%"});
             $('.heart').animate({"margin-left":"48%"});
             zip.unzip(file_download, directory,function (event){
                 $('.bar_fill').animate({"width":"100%"});
                 $('.heart').animate({"margin-left":"98%"});
-                $('.progress_text').text('THANK YOU FOR DOWNLOADING ');
+                $('.progress_text').text('THANK YOU FOR DOWNLOADING, YOU CAN CONTINUE USING THE APPLICATION.');
                 $('.p_t1').fadeIn();
             }, function(progressEvent) {
             });
