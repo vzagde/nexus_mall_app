@@ -82,15 +82,15 @@ function zip_unzip_code() {
         uri,
         file_download,
         function(entry) {
+            $('.progress_text').html('DOWNLOADING FOR ASSET FILES. <br>PLEASE WAIT...');
+            $('.bar_fill').animate({"width":"50%"});
+            $('.heart').animate({"margin-left":"48%"});
             zip.unzip(file_download, directory,function (event){
                 $('.bar_fill').animate({"width":"100%"});
                 $('.heart').animate({"margin-left":"98%"});
                 $('.progress_text').text('THANK YOU FOR DOWNLOADING ');
                 $('.p_t1').fadeIn();
             }, function(progressEvent) {
-                $('.progress_text').text('DOWNLOADING FOR ASSET FILES. PLEASE WAIT...');
-                $('.bar_fill').animate({"width":"50%"});
-                $('.heart').animate({"margin-left":"48%"});
             });
         },
         function(error) {
