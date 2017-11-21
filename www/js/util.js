@@ -64,7 +64,6 @@ function login(){
 }
 
 function zip_unzip_code() {
-    alert("Entered Into zip unzip code");
     var directory;
     if (cordova.file.documentsDirectory) {
         directory = cordova.file.documentsDirectory; // for iOS
@@ -75,11 +74,14 @@ function zip_unzip_code() {
 
     var fileTransfer = new FileTransfer();
     var uri = encodeURI("http://leasing.nexusmalls.com/Archive.zip");
+    $('.progress_text').text('INITIATED FILE ASSETS TRANSFER');
+    $('.bar_fill').animate({"width":"25%"});
+    $('.heart').animate({"margin-left":"23%"});
+
     fileTransfer.download(
         uri,
         file_download,
         function(entry) {
-            alert("File Transfer complete Start to unzip");
             zip.unzip(file_download, directory,function (event){
                 $('.bar_fill').animate({"width":"100%"});
                 $('.heart').animate({"margin-left":"98%"});
