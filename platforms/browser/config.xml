@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kreaserv.nexus" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>NEXUS LEASING APP</name>
+    <description>
+        Nexus Malls is the Indian Retail Portfolio arm of world’s leading investment firm, The Blackstone Group. Nexus Malls marked its foray into Indian Retailing in 2016 with an aim to transform the shopping experience of the Indian consumers. Growing at a great pace since inception, Nexus Malls now boasts of a portfolio of 4.5 million square feet of Grade A retail space in the country. Nexus Malls have thereby established themselves as one of the leaders in the retail real estate industry in India.
+    </description>
+    <author email="vishal@kreaserv.com" href="http://www.nexusmalls.com/">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    <icon src="app_icon.png" />
+    <icon density="mdpi" height="57" platform="android" src="app_icon.png" width="57" />
+    <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
+    <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
+    <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
+    <icon height="80" platform="ios" src="www/res/icon/ios/icon-40@2x.png" width="80" />
+    <icon height="50" platform="ios" src="www/res/icon/ios/icon-50.png" width="50" />
+    <icon height="100" platform="ios" src="www/res/icon/ios/icon-50@2x.png" width="100" />
+    <icon height="60" platform="ios" src="www/res/icon/ios/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="www/res/icon/ios/icon-60@2x.png" width="120" />
+    <icon height="180" platform="ios" src="www/res/icon/ios/icon-60@3x.png" width="180" />
+    <icon height="72" platform="ios" src="www/res/icon/ios/icon-72.png" width="72" />
+    <icon height="144" platform="ios" src="www/res/icon/ios/icon-72@2x.png" width="144" />
+    <icon height="76" platform="ios" src="www/res/icon/ios/icon-76.png" width="76" />
+    <icon height="152" platform="ios" src="www/res/icon/ios/icon-76@2x.png" width="152" />
+    <icon height="29" platform="ios" src="www/res/icon/ios/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
+    <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
+    <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+    <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+    <splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
+    <splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+    <splash height="768" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+    <splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+    <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+    <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+    <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+</widget>

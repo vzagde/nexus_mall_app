@@ -1,0 +1,102 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "NEXUS LEASING APP",
+  "short_name": "NEXUS LEASING APP",
+  "version": "com.kreaserv.nexus",
+  "description": "Nexus Malls is the Indian Retail Portfolio arm of world’s leading investment firm, The Blackstone Group. Nexus Malls marked its foray into Indian Retailing in 2016 with an aim to transform the shopping experience of the Indian consumers. Growing at a great pace since inception, Nexus Malls now boasts of a portfolio of 4.5 million square feet of Grade A retail space in the country. Nexus Malls have thereby established themselves as one of the leaders in the retail real estate industry in India.",
+  "author": "PhoneGap Team",
+  "icons": [
+    {
+      "src": "app_icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "app_icon.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "www/res/icon/ios/icon.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "www/res/icon/ios/icon@2x.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "www/res/icon/ios/icon-40.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "www/res/icon/ios/icon-40@2x.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "www/res/icon/ios/icon-50.png",
+      "type": "image/png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "www/res/icon/ios/icon-50@2x.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "www/res/icon/ios/icon-60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "www/res/icon/ios/icon-60@2x.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "www/res/icon/ios/icon-60@3x.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "www/res/icon/ios/icon-72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "www/res/icon/ios/icon-72@2x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "www/res/icon/ios/icon-76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "www/res/icon/ios/icon-76@2x.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "www/res/icon/ios/icon-small.png",
+      "type": "image/png",
+      "sizes": "29x29"
+    },
+    {
+      "src": "www/res/icon/ios/icon-small@2x.png",
+      "type": "image/png",
+      "sizes": "58x58"
+    },
+    {
+      "src": "www/res/icon/ios/icon-small@3x.png",
+      "type": "image/png",
+      "sizes": "87x87"
+    }
+  ],
+  "start_url": "index.html"
+}

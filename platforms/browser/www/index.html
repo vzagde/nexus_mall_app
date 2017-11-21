@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html manifest="js/appcache.manifest">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>Nexus</title>
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-through toolbar-through">
+                <div data-page="index" class="page">
+					<div class="line_box1"><div class="box_height box_fill1 clr1"></div></div>
+					<div class="line_box2"><div class="box_height box_fill1 clr2"></div></div>
+                    <div class="page-content pad0">
+                        <div class="container">
+                            <img src="images/logo.png" class="logo" alt="" />
+							<div class="login_box">
+								<img src="images/red1.png" class="red1" alt="" />
+								<p class="enter_text">Enter <br /> your<br /> employee <br /> code</p>
+								<div class="login_sub">
+									<input type="text" class="login_inpt" placeholder="eg. 4523678" name="" id="emp_code" value="">
+									<a class="login_click posr" href="" onclick="login()"><span class="a_p">Login</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="hover_effect"></span></a>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					<div class="line_box3"><div class="box_height box_fill2 clr1"></div></div>
+					<div class="line_box4"><div class="box_height box_fill2 clr2"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/lockr.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR0LHIhJ-YOQU1BGpSTzQP1y4ml9Wb_xs&v=3.exp&signed_in=true"></script> -->
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmfleeXNBAycuFEq3QMqZYZyIkEWHk544"></script> -->
+    <!-- <script type="text/javascript" src="js/google_map.js"></script> -->
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>window.google && window.google.maps || document.write('<script src="js/gmapapi.js"><\/script>')</script>
+
+    <script type="text/javascript" src="js/webStorage.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+	
+	<script type="text/javascript">
+		$('.box_height').animate({"height":"100%"}, 1000);
+		$('.logo').animate({"opacity":"1" , "top":"0"}, 1000, function(){
+			$('.logo').delay(1000).animate({"top":"-87%" , "left":"-81%" , "width":"15%"}, 700);
+			$('.box_height').delay(1000).animate({"height":"0%"}, 700);
+			$('.red1').delay(1200).animate({"opacity":"1" , "bottom":"0"}, 800);
+			$('.enter_text').delay(1500).animate({"opacity":"1" , "top":"28%"}, 1200);
+			$('.login_sub').delay(2000).animate({"opacity":"1" , "left":"38%"}, 1200);
+		});
+	</script>
+	
+</body>
+
+</html>
