@@ -64,6 +64,7 @@ function login(){
 }
 
 function zip_unzip_code() {
+    alert("Entered Into zip unzip code");
     var directory;
     if (cordova.file.documentsDirectory) {
         directory = cordova.file.documentsDirectory; // for iOS
@@ -74,24 +75,28 @@ function zip_unzip_code() {
 
     var fileTransfer = new FileTransfer();
     var uri = encodeURI("http://kreaserv-tech.com/Archive.zip");
-
+    alert("Start with file transfer");
+    alert(directory);
     fileTransfer.download(
         uri,
         file_download,
         function(entry) {
-            zip.unzip(file_download, directory,function (){
-                console.log('file unzip Success');
+            alert("File Transfer complete Start to unzip");
+            zip.unzip(file_download, directory,function (event){
+                alert('file unzip worked');
                 $('.bar_fill').animate({"width":"100%"});
                 $('.heart').animate({"margin-left":"98%"});
                 $('.progress_text').text('THANK YOU FOR DOWNLOADING ');
                 $('.p_t1').fadeIn();
+            }, function(progressEvent) {
+                alert('file unzip inprogress');
             });
-            console.log("download complete: " + entry.toURL());
+            alert("download complete: " + entry.toURL());
         },
         function(error) {
-           console.log("download error source " + error.source);
-           console.log("download error target " + error.target);
-           console.log("download error code" + error.code);
+           alert("download error source " + error.source);
+           alert("download error target " + error.target);
+           alert("download error code" + error.code);
         }, false, {
         }
     );
