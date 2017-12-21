@@ -67,16 +67,32 @@
     <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
     <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
 
-    <!-- <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
-    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+    <!-- 
     <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
     <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/> -->
+    <splash src="res/screen/ios/Default~iphone.png" width="480" height="320"/>
+    <splash src="res/screen/ios/Default@2x~iphone.png" width="960" height="640"/>
+    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="1136" height="640"/>
+    <splash src="res/screen/ios/Default-568h@2x.png" width="1136" height="640"/>
+    <splash src="res/screen/ios/Default-667h.png" width="1334" height="750"/>
     <splash src="res/screen/ios/Default-Landscape~iphone.png" width="568" height="320"/>
     <splash src="res/screen/ios/Default-Portrait~ipad.png" width="1024" height="768"/>
     <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="res/screen/ios/Default-736h.png" width="2208" height="1242"/>
+    <splash src="res/screen/ios/Default-736h.png" width="2208" height="1242"/> -->
+    <splash platform="ios" src="res/screen/ios/Default-@2x~ipad.png" width="1536" height="2048" />
+    <splash platform="ios" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136" />
+    <splash platform="ios" src="res/screen/ios/Default-667h.png" width="750" height="1334" />
+    <splash platform="ios" src="res/screen/ios/Default-736h.png" width="1242" height="2208" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscap-568h@2x~iphone.png" width="1136" height="640" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscap-667h.png" width="1334" height="750" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscap@2x~iphone.png" width="960" height="640" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscap~iphone.png" width="480" height="320" />
+    <splash platform="ios" src="res/screen/ios/Default@2x~iphone.png" width="640" height="960" />
+    <splash platform="ios" src="res/screen/ios/Default~ipad.png" width="768" height="1024" />
+    <splash platform="ios" src="res/screen/ios/Default~iphone.png" width="320" height="480" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536" />
+    <splash platform="ios" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768" />
     <!-- <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
