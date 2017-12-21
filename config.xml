@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.nexus.leasingapp" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.nexus.leasingapp" version="3.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>NEXUS LEASING APP</name>
     <description>
         Nexus Malls is the Indian Retail Portfolio arm of world’s leading investment firm, The Blackstone Group. Nexus Malls marked its foray into Indian Retailing in 2016 with an aim to transform the shopping experience of the Indian consumers. Growing at a great pace since inception, Nexus Malls now boasts of a portfolio of 4.5 million square feet of Grade A retail space in the country. Nexus Malls have thereby established themselves as one of the leaders in the retail real estate industry in India.
@@ -67,15 +67,15 @@
     <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
     <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
 
-    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
+    <!-- <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
     <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
     <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
     <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
     <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
-    <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
+    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/> -->
+    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="1024" height="768"/>
+    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="res/screen/ios/Default-736h.png" width="2208" height="1242"/>
     <!-- <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
