@@ -4,6 +4,9 @@ var event_id = 0;
 var store_category_id = 0;
 var start_date_test = '';
 var end_date_test = '';
+
+
+
 function j2s(json) {
     return JSON.stringify(json);
 }
@@ -11,6 +14,7 @@ function j2s(json) {
 function goto_page(page) {
     if (page == 'tabs.html') {
         if (!load_ui) {
+            alert("Please download all the assets to access the application.");
             return false;
         } else {
             load_ui = Lockr.get('load_ui');
@@ -44,6 +48,8 @@ function login(){
         })
         .done(function(res) {
             myApp.hideIndicator();
+            Lockr.set('token', res.users_data);
+            token = Lockr.get('token');
             Lockr.set('login_status', 'status');
             if (res.status == 'SUCCESS') {
                 mainView.router.load({
@@ -51,16 +57,73 @@ function login(){
                     ignoreCache: false,
                  });
             } else {
-                myApp.alert('Invalid Employee Code');
+                alert('Invalid Employee Code');
             }
         })
         .fail(function(err) {
             myApp.hideIndicator();
-            myApp.alert('Some error occurred on connecting.');
+            alert('Some error occurred on connecting.');
         })
         .always(function() {});
     }
 
+}
+
+function sign_up(){
+    var email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var name = $('#name').val();
+    var email = $('#email').val();
+
+    if (name == '') {
+        alert('Enter Your name');
+        return false;
+    }
+
+    if (email == '') {
+        alert('Enter Your Email id');
+        return false;
+    }
+
+    if (!email.match(email_regex)) {
+       alert('Enter Your Valid Email id');
+       return false;
+    }
+    // var password = $('#password').val();
+     myApp.showIndicator();
+    $.ajax({
+            url: base_url + '/sign_up',
+            type: 'POST',
+            dataType: 'json',
+            crossDomain: true,
+            data: {
+                "name": name,
+                "email": email,
+                // "password": password,
+            },
+        })
+        .done(function(res) {
+            myApp.hideIndicator();
+            console.log(res);
+            // Lockr.set('login_status', 'status');
+            if (res.status == 'SUCCESS') {
+                alert(res.msg);
+                 Lockr.set('token', res.users_data);
+                 token = Lockr.get('token');
+                  Lockr.set('login_status', 'status');
+                mainView.router.load({
+                    url: 'sync.html',
+                    ignoreCache: false,
+                 });
+            } else {
+                alert(res.msg);
+            }
+        })
+        .fail(function(err) {
+            myApp.hideIndicator();
+            alert('Some error occurred on connecting.');
+        })
+        .always(function() {});
+    
 }
 
 function zip_unzip_code() {
@@ -124,6 +187,7 @@ function download_image(){
         crossDomain: true,
         data: {
             send_url : send_url,
+            users_data : token,
         }
     })
     .done(function(res) {
@@ -135,7 +199,7 @@ function download_image(){
     })
     .fail(function(err) {
         myApp.hideIndicator();
-        myApp.alert('Some error occurred on connecting.');
+        alert('Some error occurred on connecting.');
     })
     .always(function() {
         myApp.hideIndicator();

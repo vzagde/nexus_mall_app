@@ -15,6 +15,8 @@ var myApp = new Framework7({
 
 var $$ = Dom7;
 
+var token = Lockr.get('token');
+
 $$(document).on('pageInit', function(e) {
     var page = e.detail.page;
     $('.single-item').slick();
@@ -44,6 +46,15 @@ $$(document).on('deviceready', function() {
     // Wait until the map is ready status.
     // map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
 });
+
+myApp.onPageInit('sign_up', function (page) {
+     $('.sync_text').animate({"opacity":"1" , "left":"21%"}, 1000);
+    $('.red2').delay(100).animate({"opacity":"1" , "right":"0"}, 700);
+    $('.sync_box').delay(500).animate({"opacity":"1" , "right":"19%"}, 800);
+    $('.skip_click').delay(400).animate({"opacity":"1" , "right":"2%"}, 500);
+    $('.skip_click1').delay(400).animate({"opacity":"1" , "right":"21%"}, 500);
+})
+
 
 myApp.onPageInit('index', function(page) {
     $('.box_height').animate({
@@ -102,6 +113,12 @@ myApp.onPageInit('tabs', function (page) {
 })
 
 myApp.onPageInit('mall_facts', function (page) {
+    console.log(token[0].id);
+    if (token[0].active_status == 0) {
+        $('#menu').hide();
+        $('#menu1').show();
+    }
+    
     $('#mall_logog_images').empty();
     $("#mall_logog_images").append(load_ui.mall_logo);
 

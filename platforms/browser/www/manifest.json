@@ -3,7 +3,7 @@
   "display": "standalone",
   "name": "NEXUS LEASING APP",
   "short_name": "NEXUS LEASING APP",
-  "version": "com.kreaserv.nexus",
+  "version": "com.nexus.leasingapp",
   "description": "Nexus Malls is the Indian Retail Portfolio arm of world’s leading investment firm, The Blackstone Group. Nexus Malls marked its foray into Indian Retailing in 2016 with an aim to transform the shopping experience of the Indian consumers. Growing at a great pace since inception, Nexus Malls now boasts of a portfolio of 4.5 million square feet of Grade A retail space in the country. Nexus Malls have thereby established themselves as one of the leaders in the retail real estate industry in India.",
   "author": "PhoneGap Team",
   "icons": [
@@ -98,5 +98,6 @@
       "sizes": "87x87"
     }
   ],
+  "orientation": "landscape",
   "start_url": "index.html"
 }
